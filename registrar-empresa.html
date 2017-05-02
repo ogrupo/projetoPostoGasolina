@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>Registrar Empresa/Filial</title>
+
+        <link rel="stylesheet" href="assets/plugins/magnific-popup/dist/magnific-popup.css"/>
+        
+        <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/rating.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/footersub.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/registro.css">
+        
+        <script src="assets/js/modernizr.min.js"></script>
+        
+        <style>
+            body{
+                background:  #444;
+                margin: auto;
+                padding-top: 62px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                        <a href="page.html" class="logo"><span>Abasteça<span>Já!</span></span></a>
+                    </div>
+                    <!-- End Logo container-->
+
+                </div>
+            </div>
+        </header>
+        <!-- End Navigation Bar-->
+        
+        <div class="login">
+             <div class="form-signin">
+                <div class="text-center">
+                    <p> Preencha o formulário abaixo </p>
+                </div>
+        <hr>
+            <div class="tab-content">
+                <div id="login" class="tab-pane active">
+                    <form action="assets/php/Clientes/registrar-empresa.php" method="post">
+                        <p class="text-muted text-center">
+                            Formulário de cadastro de Empresa/Filial
+                        </p>
+                    <input type="text" placeholder="Nome" class="form-control top"><br>
+                    <input type="email" placeholder="E-mail" class="form-control bottom"><br>
+                    <input type="texto" placeholder="Razão Social" class="form-control bottom"><br>
+                    <input type="password" placeholder="Senha" class="form-control bottom"><br>
+                    <input type="password" placeholder="Confirme a senha" class="form-control bottom">
+                    <div class="checkbox">
+		              </div>
+                        <button class="btn btn-lg btn-primary btn-block" name="submit">Registrar</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

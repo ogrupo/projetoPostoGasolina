@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>Registrar</title>
+
+        <link rel="stylesheet" href="assets/plugins/magnific-popup/dist/magnific-popup.css"/>
+        
+        <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/rating.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/footersub.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/registro.css">
+        
+        <script src="assets/js/modernizr.min.js"></script>
+        
+        <style>
+            body{
+                background:  #444;
+                margin: auto;
+                padding-top: 62px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                        <a href="assets/php/Clientes/page-user.php" class="logo"><span>Abasteça<span>Já!</span></span></a>
+                    </div>
+                    <!-- End Logo container-->
+
+                </div>
+            </div>
+        </header>
+        <!-- End Navigation Bar-->
+        
+        <div class="login">
+             <div class="form-signin">
+                <div class="text-center">
+                    <p> Preencha o formulário abaixo </p>
+                </div>
+        <hr>
+            <div class="tab-content">
+                <div id="login" class="tab-pane active">
+                    <form method="post" action="assets/php/Clientes/registrar-cliente.php">
+                        <p class="text-muted text-center">
+                            Formulário de cadastro
+                        </p>
+                    <!--<input type="text" placeholder="Nome"><br>
+                    <input type="email" placeholder="Email"><br>
+                    <input type="password" placeholder="Senha"><br>
+                    <input type="password" placeholder="Confirme a senha">
+                    <div class="checkbox">
+		              </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+                        <input type="submit" id="" value="Registrar" name="submit">
+                    </form>-->
+                    		<form method="post" action="assets/php/Clientes/registrar-cliente.php">
+                                Nome do Usuário<br><input type="text" name="Nome"><br>
+			                    E-mail<br><input type="email" name="Email"><br>
+                                Razão Social<br><input type="text" name="RazaoSocial"><br>
+                                CNPJ<br><input type="text" name="CNPJ"><br>
+                                Senha<br><input type="password" name="Senha"><br>
+                                <input type="submit" id="" value="Cadastrar" name="submit">
+		                   </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+        
+</html>
